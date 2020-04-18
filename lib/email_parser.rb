@@ -4,4 +4,12 @@
 # or whitespace (' ').
 
 class EmailAddressParser
+
+  def initialize(emails)
+    @emails = emails
+  end
+
+  def parse(emails)
+    emails.split(/[\s,']/)
+  end
 end
